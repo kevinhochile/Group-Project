@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <title>Fetch data from database<title>
+</head>
+<body>
+    <center>
+        <h1> Fetch records from postresql</h1>
+        <hr/>
+        <iframe width="1024" height="1060" src="{%https://app.powerbi.com/view?r=eyJrIjoiNTYzM2Y5MDctMzJmMC00Yjg5LTkyNmMtMjY0YzQ1MWQ4YTljIiwidCI6IjVhNTc0MDRhLWI0MTItNDIyOS04ZDY3LTMwM2ZkYTZjMTI0YiIsImMiOjZ9%}" frameborder="0" allowFullScreen="true">hola</iframe>
+        
+        <table>
+            <tr>
+                <th>fname</th>
+                <th>lname</th>
+                <th>gender</th>
+                <th>state</th>
+                <th>credentials</th>
+                <th>specialty</th>
+                <th>isopiodprescriber</th>
+                <th>totalprescription</th>
+            </tr>
+            {% for result in data %}
+            <tr>
+                <td>{{result.fname}}</td>
+                <td>{{result.lname}}</td>
+                <td>{{result.gender}}</td>
+                <td>{{result.state}}</td>
+                <td>{{result.credentials}}</td>
+                <td>{{result.specialty}}</td>
+                <td>{{result.isopiodprescriber}}</td>
+                <td>{{result.totalprescription}}</td>
+            </tr>
+            {% endfor %}
+{% endblock %}

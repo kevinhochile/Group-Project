@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5" >
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5" >
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="{% static 'img/docss.jpeg' %}" alt="..." /></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">U.S. Opiate Crisis</h1>
+                    <p>We are commited to helping mitigate the ongoing opioid crisis by giving prescribers and government agencies access to data to help them make more informed decisions</p>
+                    
+                </div>
+            </div>
+            <!-- Call to Action-->
+            <div class="card text-white bg-secondary my-5 py-4 text-center" >
+                <div class="card-body" style="background-color:DodgerBlue;" ><p class="text-white m-0"; >Our mission is to provide data to those that need to find more information about opioids and drugs and support governmental entities with meaningful data. </p></div>
+            </div>
+            <!-- Content Row-->
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">About CMS</h2>
+                            <p class="card-text"> The Centers for Medicare & Medicaid Services, CMS, is part of the Department of Health and Human Services (HHS). Click the button below to find more data related to medicare provider utilization and payment.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color:DodgerBlue;" href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Part-D-Prescriber">More Info</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">About HHS </h2>
+                            <p class="card-text">The mission of the U.S. Department of Health and Human Services (HHS) is to enhance the health and well-being of all Americans, by providing effective health and human services and by fostering sound, sustained advances in the sciences underlying medicine, public health, and social services.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color:DodgerBlue;" href="https://www.hhs.gov">More Info</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">About CDC</h2>
+                            <p class="card-text">CDC increases the health security of our nation. As the nation’s health protection agency, CDC saves lives and protects people from health threats. To accomplish our mission, CDC conducts critical science and provides health information that protects our nation against expensive and dangerous health threats, and responds when they arise.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color:DodgerBlue;" href="https://www.cdc.gov">More Info</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
