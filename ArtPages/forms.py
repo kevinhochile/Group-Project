@@ -14,7 +14,7 @@ class OrderForm(forms.ModelForm):
             'last_name': 'Last Name',
             'email': 'Gender',
             'state': 'State',
-            'phone': 'Credentials',
+            'phone': 'Phone',
             'order_description': 'Specialty',
             'credentials': 'Is Opioid Prescriber?',
             'image': 'Total Prescriptions'
